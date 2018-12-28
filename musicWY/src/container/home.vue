@@ -128,8 +128,12 @@ export default {
     },
     mounted(){
         var mySwiper = new Swiper('.swiper-container', {
-          autoplay:true,
-          loop:true
+          autoplay:{
+              stopOnLastSlide: false,
+            disableOnInteraction: true,
+            delay:1000
+          },
+          loop:true,
         })
       },
     methods: {
