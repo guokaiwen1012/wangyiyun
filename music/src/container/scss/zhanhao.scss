@@ -1,0 +1,152 @@
+@import './_minix.scss';
+@import './common.scss';
+.tou {
+    width: 100%;
+    height: pxTorem(44px);
+    background: rgb(48, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 pxTorem(10px);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    span {
+        color: #fff;
+        width: pxTorem(40px);
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        .touicon {
+            width: pxTorem(30px);
+            height: pxTorem(30px);
+            margin-top: pxTorem(4px);
+        }
+    }
+    .zhan {
+        font-size: pxTorem(16px);
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: pxTorem(10px) pxTorem(10px);
+    box-sizing: border-box;
+    .one {
+        display: flex;
+        img {
+            width: pxTorem(50px);
+            height: pxTorem(50px);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .ji {
+                width: pxTorem(30px);
+                height: pxTorem(15px);
+                border: 1px solid #ccc;
+                border-radius: pxTorem(10px);
+            }
+        }
+    }
+    .qian {
+        width: pxTorem(50px);
+        height: pxTorem(20px);
+        border: 1px solid #ccc;
+        border-radius: pxTorem(10px);
+    }
+}
+
+.userinit {
+    width: 100%;
+    padding: pxTorem(10px) 0;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    .useri {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 24%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #ccc;
+            p {
+                padding: pxTorem(5px) 0;
+                box-sizing: border-box;
+            }
+        }
+        li:nth-child(4) {
+            border: none;
+        }
+    }
+}
+
+.userlist {
+    width: 100%;
+    background: #ccc;
+    .mexin {
+        width: 100%;
+        padding: pxTorem(15px) pxTorem(8px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        margin: pxTorem(10px) 0;
+    }
+}
+
+.once {
+    display: flex;
+    align-items: center;
+    .zuo {
+        width: pxTorem(20px);
+        height: pxTorem(20px);
+        margin-right: pxTorem(10px);
+    }
+}
+
+.huiyuan {
+    background: #fff;
+    width: 100%;
+    margin: pxTorem(10px) 0;
+    li {
+        width: 100%;
+        padding: pxTorem(15px) pxTorem(8px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.she {
+    background: #fff;
+    width: 100%;
+    margin: pxTorem(10px) 0;
+    li {
+        width: 100%;
+        padding: pxTorem(15px) pxTorem(8px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.you {
+    width: pxTorem(20px);
+    height: pxTorem(20px);
+}
