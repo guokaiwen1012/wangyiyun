@@ -1,0 +1,153 @@
+@import './_minix.scss';
+@import './common.scss';
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wraper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    width: 100%;
+    height: pxTorem(80px);
+    background: rgb(48, 48, 48);
+}
+
+.header {
+    width: 100%;
+    height: pxTorem(44px);
+    background: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-between;
+    padding: pxTorem(10px) pxTorem(10px);
+    box-sizing: border-box;
+    .inp {
+        margin: 0 pxTorem(10px);
+        box-sizing: border-box;
+        border-radius: pxTorem(30px);
+        background: rgb(161, 161, 161);
+        input {
+            text-align: center;
+            width: 80%;
+        }
+    }
+    img {
+        width: pxTorem(25px);
+        height: pxTorem(25px);
+    }
+}
+
+.tabTitle {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: pxTorem(5px) 0;
+    box-sizing: border-box;
+    span {
+        width: 50%;
+        color: #fff;
+    }
+}
+
+.con {
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-container {
+    width: 95%;
+    .swiper-wrapper {
+        width: 100%;
+        .swiper-slide {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.nav {
+    width: 100%;
+    padding: pxTorem(20px) 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        li {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            img {
+                width: pxTorem(50px);
+                height: pxTorem(50px);
+                border-radius: 50%;
+                background: #000;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.sing {
+    width: 100%;
+    h1 {
+        text-align: left;
+        font-size: pxTorem(16px);
+        font-weight: 600;
+        margin-left: 5px;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 33%;
+            padding: pxTorem(10px) pxTorem(5px);
+            box-sizing: border-box;
+            img {
+                width: 100%;
+                height: 80%;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: pxTorem(44px);
+    flex-shrink: 0;
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: pxTorem(25px);
+                height: pxTorem(25px);
+            }
+        }
+    }
+}
