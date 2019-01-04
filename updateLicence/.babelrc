@@ -1,7 +1,15 @@
 {
-  "presets": [
-    ["env", { "modules": false }],
-    "stage-3"
-  ],
-  "plugins": ["transform-runtime"]
+    "presets": [
+        ["env", { "modules": false }],
+        "stage-3"
+    ],
+
+    "plugins": [
+        ["import", {
+            "libraryName": "vant",
+            "libraryDirectory": "es",
+            "style": true
+        }],
+        "transform-runtime"
+    ]
 }

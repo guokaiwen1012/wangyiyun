@@ -23,26 +23,7 @@
 
     <Upload />
     
-      <div class="toplist">
-        <ol>
-          <li>
-            <span>服务类型</span>
-            <span>换驾照 <img src="../img/icon_32r6q408sh5/iconfontyoujiantou-copy-copy-copy-copy.png" alt=""></span>
-          </li>
-          <li>
-            <span>当前驾照签发城市<em>?</em></span>
-            <span>请选择签发地</span>
-          </li>
-          <li>
-            <span>可补换签发城市<em>?</em></span>
-            <span>请选择补换地</span>
-          </li>
-          <li>
-            <span>服务费</span>
-            <span class="price">￥399</span>
-          </li>
-        </ol>
-      </div>
+    <Toplist />
 
       <div class="bottomlist">
         <ol>
@@ -73,9 +54,11 @@
 
 <script>
 import Upload from '@/components/Upload';
+import Toplist from '@/components/toplist'
 export default {
     components:{
-        Upload
+        Upload,
+        Toplist
     }
 }
 </script>

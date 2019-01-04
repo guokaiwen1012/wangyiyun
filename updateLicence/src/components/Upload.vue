@@ -49,12 +49,13 @@ export default {
       this.showMask = false;
     },
     async upload(type){
-       let res = await uploadImg(type);
+      let res = await uploadImg(type);
       let index = this.list.findIndex(item=>item==this.current);
+      console.log(this.list)
       console.log('index...', index);
       this.updateList({
         index,
-        // src: 'http://picture.eclicks.cn/g2//l//2019//01//02//454a564ad63ddda5_640_853.jpg',
+        //src: 'http://picture.eclicks.cn/g2//l//2019//01//02//454a564ad63ddda5_640_853.jpg',
         src: res.data.url
       })
       this.showMask = false;
