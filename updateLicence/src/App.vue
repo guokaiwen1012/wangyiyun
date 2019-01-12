@@ -1,6 +1,9 @@
 <template>
   <!-- <button @click="login">点击登陆</button> -->
-  <router-view></router-view>
+  <keep-alive exclude="Index">
+    <router-view></router-view>
+  </keep-alive>
+  
 </template>
 
 <script>

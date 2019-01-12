@@ -24,7 +24,7 @@
     <Upload />
     
     <Toplist />
-
+      <router-link to="/shou">去收货地址页面</router-link>
       <div class="bottomlist">
         <ol>
           <li>
@@ -42,23 +42,37 @@
       <div class="kefu">
         <img src="../img/images/kefu_05.gif" alt="">
       </div>
+
       
+
       <div class="footer">
         <span>实付:<em>￥399</em></span>
-        <span class="btn">立即支付</span>
+        <span class="btn" @click="click">立即支付</span>
       </div>
 
     </div>
+    
     </div>
 </template>
 
 <script>
 import Upload from '@/components/Upload';
-import Toplist from '@/components/toplist'
+import Toplist from '@/components/toplist';
+import {isVip, goPay} from '@/api/index';
 export default {
     components:{
         Upload,
         Toplist
+    },
+    methods:{
+        click(){
+            goPay();
+        }
+    },
+    mounted(){
+        isVip().then(res=>{
+            console.log('isVip...', res);
+        })
     }
 }
 </script>
@@ -292,5 +306,54 @@ strong.active,i.active{
     padding: 10px 10px;
     box-sizing: border-box;
   }
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  button,a{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+  }
+  button{
+    border-top: 1px solid #c0c0c0;
+  }
+  button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background: #c0c0c0;
+  }
+}
+@mixin scale($ratio){
+  transform: scaleY($ratio)
+}
+// 2倍屏
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .bottom button::after{
+    // transform: scaleY(0.5);
+    @include scale(0.5)
+  }
+}
+// 3倍屏
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .bottom button::after{
+    // transform: scaleY(0.33);
+    @include scale(0.33)
+  }
+}
+// 响应式
+@media screen and (min-width: 400px){
 }
 </style>

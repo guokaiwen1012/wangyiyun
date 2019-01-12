@@ -32,6 +32,11 @@
         <van-picker :columns="costColumns" show-toolbar title="选择补换城市"
           ref="costPicker"  @cancel="oncancel" @confirm="costConfirm" @change="costChange"/>
         </van-popup>
+
+        <div class="bottom">
+      <button id="cc">跳转客服</button>
+      <a href="mailto:342690199@qq.com">打电话</a>
+      </div>
       </div>
       
 </template>
